@@ -1,5 +1,5 @@
 {% set name = "sage-flatsurf" %}
-{% set version = "0.1" %}
+{% set version = "0.3" %}
 
 package:
   name: {{ name }}
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 67e516cf6cd99f29eb05010af44c7717cf39d347f8d0c31e2026dd728989c672
-  patches:
-    - 0001-Fix-import-order.patch
+  sha256: 2d03e7608e4713f18663898e219852bb574cc466a6a613201bf3fccae40df816
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +31,7 @@ about:
   home: http://github.com/videlec/sage-flatsurf
   license: GPL-2.0-or-later
   license_file: COPYING
-  summary: 'Flat Surfaces in SageMath'
+  summary: Flat Surfaces in SageMath
   description: |
     This module supports the investigation of geometric, algebraic and
     dynamical questions related to flat surfaces. By flat surface we mean a
