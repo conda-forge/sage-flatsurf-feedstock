@@ -1,7 +1,7 @@
 About sage-flatsurf
 ===================
 
-Home: http://github.com/videlec/sage-flatsurf
+Home: http://github.com/flatsurf/sage-flatsurf
 
 Package license: GPL-2.0-or-later
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sage-flatsurf-f
 
 Summary: Flat Surfaces in SageMath
 
-Development: https://github.com/videlec/sage-flatsurf
+Development: https://github.com/flatsurf/sage-flatsurf
 
-Documentation: http://www.labri.fr/perso/vdelecro/flatsurf/latest/
+Documentation: https://flatsurf.github.io/sage-flatsurf/
 
 This module supports the investigation of geometric, algebraic and
 dynamical questions related to flat surfaces. By flat surface we mean a
