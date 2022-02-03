@@ -1,5 +1,5 @@
 {% set name = "sage-flatsurf" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f8201b075b3fdf849f61e8a5b4bf011028a3674661e9172357e4f9f801499295
+  sha256: 6c8318a3a39b1ff5edec17cab8628674641d5becc96a15a1a9942f0576804ef1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python =2.7|>=3.6
+    - python
     - pip
   run:
-    - python =2.7|>=3.6
+    - python
     - sagelib
     - surface-dynamics
 
