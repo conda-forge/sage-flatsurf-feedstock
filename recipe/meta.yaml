@@ -1,5 +1,5 @@
 {% set name = "sage-flatsurf" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 93b014de428d1f83487ff53d743d2adac02d18621addbc251f3b60917120ca05
+  sha256: eb15b740c4e0e7fac3ef723350f9cdb2a6fe23c42e000b37abe8fe3720f3b08e
 
 build:
   noarch: python
