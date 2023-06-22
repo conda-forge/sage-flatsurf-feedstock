@@ -1,11 +1,11 @@
-About sage-flatsurf
-===================
+About sage-flatsurf-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sage-flatsurf-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/flatsurf/sage-flatsurf
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sage-flatsurf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flat Surfaces in SageMath
 
