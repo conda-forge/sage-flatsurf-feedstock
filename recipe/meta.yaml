@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name | replace('-', '_') }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 7cbf4232962d1a7f6640b884efa3f8c92c6269cd6ed357f22b32bdf373b61dc0
 
 build:
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - sagelib
     - bidict
     - matplotlib-base
