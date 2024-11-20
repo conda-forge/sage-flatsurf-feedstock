@@ -22,8 +22,10 @@ requirements:
   run:
     - python >=3.6
     - sagelib
-    - surface-dynamics
     - bidict
+    - matplotlib-base
+    - more-itertools
+    - surface-dynamics
 
 test:
   imports:
